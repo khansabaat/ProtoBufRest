@@ -1,0 +1,37 @@
+syntax = "proto3";
+package protofiles;
+
+message User{
+  string FirstName = 1;
+  string LastName = 2;
+  string Email = 3;
+}
+
+message Employee{
+  repeated string UserId = 1;
+  string Designation = 2;
+}
+
+message Payload{
+  string FirstName = 1;
+  string LastName = 2;
+  string Email = 3;
+  string Designation = 4;
+}
+
+message Retrieve{
+  string FirstName = 1;
+  string LastName = 2;
+  string Email = 3;
+  string EmployeeId = 4;
+  string Designation = 5;
+}
+
+message UserID{
+  string userid = 1;
+}
+
+message UpdateUser{
+  string id = 1;
+  string Email = 2;
+}

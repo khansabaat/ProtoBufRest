@@ -1,0 +1,11 @@
+syntax = "proto3";
+package protofiles;
+
+message Success{
+  string details = 1;
+  string object_id = 2;
+}
+
+message Failure{
+  string details = 1;
+}
